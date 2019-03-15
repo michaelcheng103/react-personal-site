@@ -1,0 +1,542 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #151515;
+  color: #eaeaea;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal,
+    monospace;
+}
+
+/* General & 'Reset' Stuff */
+
+.j-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section {
+  display: block;
+  margin: 0 0 20px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 20px;
+}
+
+/* Header, <header>
+   header   - container
+   h1       - project name
+   h2       - project description
+*/
+
+header {
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-bottom: 1px dashed #b5e853;
+  padding: 10px 0;
+  margin: 0 0 10px 0;
+}
+
+header h1 {
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 0 0 0 -40px;
+  font-weight: bold;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal,
+    monospace;
+  color: #b5e853;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1),
+    0 0 10px rgba(181, 232, 83, 0.1);
+  letter-spacing: -1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+header h1:before {
+  content: "~$:./";
+  font-size: 24px;
+}
+
+header h2 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #666;
+}
+
+#downloads .btn {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+}
+
+/* Main Content */
+
+#main_content {
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+section img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal,
+    monospace;
+  color: #00ff00;
+  letter-spacing: -0.03em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1),
+    0 0 10px rgba(181, 232, 83, 0.1);
+}
+
+#main_content h1 {
+  font-size: 30px;
+}
+
+#main_content h2 {
+  font-size: 24px;
+}
+
+#main_content h3 {
+  font-size: 18px;
+}
+
+#main_content h4 {
+  font-size: 14px;
+}
+
+#main_content h5 {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+}
+
+#main_content h6 {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #999;
+  margin: 0 0 5px 0;
+}
+
+#main_content p {
+  font-size: 14px;
+}
+
+dt {
+  font-style: italic;
+  font-weight: bold;
+}
+
+blockquote {
+  color: #aaa;
+  padding-left: 10px;
+  border-left: 1px dotted #666;
+}
+
+pre {
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  font-size: 16px;
+  color: #b5e853;
+  border-radius: 2px;
+  word-wrap: normal;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+table {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+th {
+  text-align: left;
+  border-bottom: 1px dashed #b5e853;
+  padding: 5px 10px;
+}
+
+td {
+  padding: 5px 10px;
+}
+
+hr {
+  height: 0;
+  border: 0;
+  border-bottom: 1px dashed #b5e853;
+  color: #b5e853;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-block;
+  background: -webkit-linear-gradient(
+    top,
+    rgba(40, 40, 40, 0.3),
+    rgba(35, 35, 35, 0.3) 50%,
+    rgba(10, 10, 10, 0.3) 50%,
+    rgba(0, 0, 0, 0.3)
+  );
+  padding: 8px 18px;
+  border-radius: 50px;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+  border-top: 2px solid rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.btn:hover {
+  background: -webkit-linear-gradient(
+    top,
+    rgba(40, 40, 40, 0.6),
+    rgba(35, 35, 35, 0.6) 50%,
+    rgba(10, 10, 10, 0.8) 50%,
+    rgba(0, 0, 0, 0.8)
+  );
+}
+
+.btn .icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 1px 8px 0 0;
+}
+
+/* Links
+   a, a:hover, a:visited
+*/
+
+a {
+  color: #63c0f5;
+  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+}
+
+/* Clearfix */
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+/* Navigation bar */
+.flex-container {
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  align-items: center;
+  align-content: center;
+}
+
+/* End Navigation bar */
+
+/* Search bar */
+#search-form {
+  padding-left: 2%;
+}
+
+#search-box {
+  width: 66%;
+}
+/* End Search bar*/
+
+/* Google's gsce tag - control the css here */
+.gsc-control-cse {
+  background: transparent !important; /* enforce this rule; do not allow override */
+  border-color: transparent !important; /* border color */
+}
+
+#___gcse_0 {
+  width: 75% !important;
+}
+
+.gsc-input-box {
+  justify-self: end !important;
+  border-radius: 8px !important;
+}
+
+.gsc-search-button button {
+  background: -webkit-linear-gradient(
+    top,
+    rgba(40, 40, 40, 0.3),
+    rgba(35, 35, 35, 0.3) 50%,
+    rgba(10, 10, 10, 0.3) 50%,
+    rgba(0, 0, 0, 0.3)
+  ) !important;
+  padding: 8px 18px !important;
+  border-radius: 50px !important;
+  border: 2px solid rgba(0, 0, 0, 0.7) !important;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.7) !important;
+  border-top: 2px solid rgba(0, 0, 0, 1) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-weight: bold !important;
+  font-size: 13px !important;
+  text-decoration: none !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+}
+/* End of gsce tag controls */
+
+/* Lunrjs search-box */
+
+#search-box {
+  border-radius: 8px;
+}
+
+/* End of Lunrjs search-box */
+
+#myCanvas {
+  padding: 0px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+
+  /* Add animation: Take x seconds to fade in and out the snackbar.
+However, delay the fade out process for y seconds */
+  -webkit-animation: fadein 1s, fadeout 6s 1s;
+  animation: fadein 1s, fadeout 6s 1s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+footer {
+  background-color: black;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.hideme {
+  display: none;
+}
+
+.controller {
+  text-align: center;
+  width: 350px;
+}
+
+/**
+ * CSS Animations to show blinky terminal cursor effect.
+ */
+.blinky {
+  position: relative;
+  display: inline-block;
+}
+
+.blinky::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -15px;
+  display: inline-block;
+  background-color: #b5e853; /* this is color of the blinky cursor */
+  vertical-align: top;
+  width: 10px; /* width of blinky cursor */
+  height: 36px; /* height of blinky cursor */
+  /*
+  Animation paramaters:
+  blink = animation-name,
+  1s = animation-duration,
+  step-end = animation-timing-function,
+  infinite = animation-iteration-count
+  */
+  -webkit-animation: blink 0.8s step-end infinite; /* Safari */
+  animation: blink 0.8s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+  /* Safari */
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* shake for clickable things, hilarious CSS effects */
+.clickable:hover {
+  text-shadow: 2px 2px 5px #99ff66;
+  animation: shake 2s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
