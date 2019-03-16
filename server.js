@@ -14,7 +14,7 @@ const ObjectId = mongojs.ObjectId;
 const form = new formidable.IncomingForm();
 
 // middleware
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "client/build")));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -41,12 +41,34 @@ app.get("/api/posts", (req, res) => {
     },
     {
       id: 4,
-      date: "Feb 25, 2019",
+      date: "Feb 28, 2019",
       title: "Four.",
-      snippet: "Snnniip!"
+      snippet: "4!"
+    },
+    {
+      id: 5,
+      date: "March 1, 2019",
+      title: "Five.",
+      snippet: "5!"
+    },
+    {
+      id: 6,
+      date: "March 10, 2019",
+      title: "Six.",
+      snippet: "6!"
+    },
+    {
+      id: 7,
+      date: "Feb 25, 2019",
+      title: "Seven.",
+      snippet: "7!"
     }
   ];
   res.json(posts);
+});
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "/client/build/index.html"));
 });
 
 app.listen(port, () => {

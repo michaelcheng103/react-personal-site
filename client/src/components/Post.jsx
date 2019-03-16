@@ -10,6 +10,7 @@ class Post extends Component {
         <span>{this.props.date}</span>
         <h4>{this.props.title}</h4>
         <p>{this.props.snippet}</p>
+        <hr />
       </li>
     );
   }
