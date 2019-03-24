@@ -25,7 +25,7 @@
     "express-validator": "^5.3.0",
     "formidable": "^1.2.1",
     "mongodb": "^3.1.4",
-    "mongojs": "^2.6.0"
+    "mongoose": "^5.4.11"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"

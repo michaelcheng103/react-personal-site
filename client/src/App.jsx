@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import { Route, Redirect } from "react-router";
+import { Route } from "react-router";
 import Home from "./pages/Home";
 import World from "./pages/World";
 
